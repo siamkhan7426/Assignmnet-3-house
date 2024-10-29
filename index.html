@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font-awesome-cdn-link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Daisy ui Talwind cdn link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Weclome my barn house</title>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                bg_primary: 'rgb(253,253, 253)',
+                bg_icon:'#ABEF5F',
+                btn_primary:'#ABEF5F',
+                btn_bgBlack:'#1C1C1C',
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body>
+    <header class="w-11/12 mx-auto bg-bg_primary">
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  <div class="flex gap-2 items-center justify-center">
+                    <span class="bg-bg_icon w-8  text-center rounded-full py-1 "><i class="fa-solid fa-arrow-trend-up"></i></span>
+                    <h1 class="text-3xl font-extrabold">Rinterio</h1>
+                  </div>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a>Home</a></li>
+                    <li><a>Services</a></li>
+                    <li><a>Portfolio</a></li>
+                    <li><a>Blogs</a></li>
+                    <li><a>Contact Us</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end justify-center">
+                  <div class="flex items-center justify-center gap-5">
+                    <span class="bg-slate-100 w-12 text-center p-3 rounded-full lg:block hidden"><i class="fa-solid fa-magnifying-glass"></i></span>
+                    <span class="bg-slate-100 w-12 text-center p-3 rounded-full lg:block hidden"><i class="fa-solid fa-cart-shopping"></i></span>
+                    <button class="btn lg:block hidden font-extrabold bg-btn_primary rounded-[1.375rem] px-5">Book Consult <i class="fa-solid fa-arrow-trend-up bg-btn_bgBlack p-2 rounded-full text-white"></i></button>
+                  </div>
+                  <div class="dropdown left-2 right-0 bg-slate-100 w-12 text-center items-center rounded-full">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4 6h16M4 12h8m-8 6h16" />
+                      </svg>
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 shadow">
+                      <li><a>Home</a></li>
+                      <li><a>Services</a></li>
+                      <li><a>Portfolio</a></li>
+                      <li><a>Blogs</a></li>
+                      <li><a>Contact Us</a></li>
+                      
+                    </ul>
+                  </div>
+                </div>
+              </div>
+        </nav>
+    </header>
+</body>
+</html>
