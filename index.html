@@ -20,10 +20,13 @@
                 bg_icon:'#ABEF5F',
                 btn_primary:'#ABEF5F',
                 btn_bgBlack:'#1C1C1C',
-              }
+              },
+               backgroundImage: {
+                lets: "url('/img/bg.jpg')"
             }
           }
         }
+      }
       </script>
 </head>
 <body>
@@ -238,7 +241,37 @@
             </div>
            </div>
          </section>
-           
+            <!-- latest work section end-->
+              <!-- input-section -->
+            <section class="input-section w-full  bg-lets  bg-center object-cover">
+                <div class="pt-14">
+                  <div class="text-center space-y-3">
+                    <h4 class="max-w-40 mx-auto bg-[#ABEF5F33] py-2 text-base px-2 rounded-xl"><i class="fa-solid fa-arrow-right mr-3"></i>Let’s Connect</h4>
+                    <h1 class="text-4xl font-extrabold">Let’s Discuss Next Project</h1>
+                    <p class="text-base">The barn house captivates with its blend of rustic charm and modern sophistication, <br>featuring weathered wood, sleek metal accents.</p>
+                      
+                  </div>
+                </div>
+                <!-- form -->
+                 <form class="space-y-3">
+                  <!-- input-1 -->
+                  <div class="grid grid-cols-1 lg:grid-cols-2 w-1/2 mx-auto gap-3 mt-5 ">
+                    <input type="text" placeholder="First Name" class="focus:outline-none focus:ring-2 focus:ring-green-500 rounded-2xl input input-bordered  " />
+                    <input type="text" placeholder="Last Name" class="focus:outline-none focus:ring-2 focus:ring-green-500 rounded-2xl input input-bordered  " />
+                  </div>
+                   <!-- input-2 -->
+                  <div class="grid grid-cols-1 lg:grid-cols-2 w-1/2 mx-auto gap-3 mt-5 ">
+                    <input type="text"  placeholder="Phone Number" class="focus:outline-none focus:ring-2 focus:ring-green-500 rounded-2xl input input-bordered  " />
+                    <input type="text" placeholder="Email number" class="focus:outline-none focus:ring-2 focus:ring-green-500 rounded-2xl input input-bordered  " />
+                  </div>
+                  <div class="w-1/2 mx-auto">
+                    <textarea class="textarea w-full h-60 focus:outline-none focus:ring-2 focus:ring-green-500" placeholder=" Write your message here"></textarea>
+                  </div>
+                  <div class="text-center">
+                    <button type="submit" class="w-1/2 mx-auto text-xl py-2 mb-7 rounded-xl text-center bg-[#ABEF5F]">Send Email</button>
+                  </div>
+                 </form>
+            </section>
      </main>
 </body>
 </html>
